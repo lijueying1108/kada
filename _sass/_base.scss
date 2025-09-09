@@ -283,7 +283,11 @@ header {
         margin: 0 auto 20px;
     }
 }
-
+.call-to-action p {
+    font-size: 0.875rem;
+    margin: 0;
+    color: #ccc; /* 灰色，和深色背景搭配 */
+}
 // Bootstrap Overrides
 .text-primary {
     color: #144988;
