@@ -346,48 +346,43 @@ footer {
         }
     }
 }
-/* Feature Box 样式 */
 .feature-box {
-    padding: 30px 20px;           /* 内边距 */
-    background-color: #f8f9fa;    /* 浅灰背景，可根据需求改 */
-    border-radius: 10px;          /* 圆角 */
-    transition: transform 0.3s, box-shadow 0.3s; /* 悬停动画 */
+  background: #fff;           /* 白色背景 */
+  border: 1px solid #ddd;     /* 浅灰边框 */
+  padding: 20px;              /* 内边距 */
+  border-radius: 8px;         /* 圆角 */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 阴影 */
+  display: flex;              /* 使用 flex 布局 */
+  flex-direction: column;     /* 垂直排列 */
+  align-items: center;        /* 水平居中 */
+  justify-content: space-between; /* 顶部图标+标题+底部 Learn more 均匀分布 */
+  min-height: 300px;          /* 可根据需要调整高度 */
+  text-align: center;         /* 文字居中 */
 }
 
 .feature-box i {
-    color: #144988;               /* 图标颜色 */
+  margin-bottom: 15px;        /* 图标下间距 */
 }
 
 .feature-box h4 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 1.25rem;           /* 20px 左右 */
+  margin-bottom: 10px;
 }
 
 .feature-box p {
-    font-size: 0.95rem;           /* 15px 左右 */
-    color: #555;                  /* 字体颜色 */
+  flex-grow: 1;               /* 自动填充中间空间，让 Learn more 在底部 */
 }
 
-/* 悬停效果 */
-.feature-box:hover {
-    transform: translateY(-5px);   /* 微浮动 */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-.feature-link {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: 600;
-    color: #144988;          /* 链接颜色 */
-    text-decoration: none;
-    transition: color 0.3s;
+.feature-box .feature-link {
+  margin-top: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #144988;
 }
 
-.feature-link:hover {
-    color: #FFD700;          /* 悬停变色 */
-    text-decoration: underline;
+.feature-box .feature-link:hover {
+  text-decoration: underline;
 }
+
 .call-to-action {
     max-width: 600px;
     margin: 0 auto 10px;
