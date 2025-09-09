@@ -257,27 +257,28 @@ products-buttons .btn i {
     transition: all 0.3s ease;
 }
 .btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 20px;
-    background-color: #FFD700; /* 金色背景 */
-    color: #144988;             /* 深蓝文字 */
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 50px;        /* 圆角按钮 */
-    text-decoration: none;
+    @include button-variant(#144988, #FFD700, #FFD700);
+    color: #144988;
     transition: all 0.3s ease;
 }
+.btn-primary i {
+    margin-right: 6px;
+    font-size: 16px;
+}
 .btn-secondary i {
-    margin-right: 6px; /* 图标和文字间距 */
+    margin-right: 6px;
     font-size: 16px;
 }
 
 .btn-secondary:hover {
-    background-color: #FFC107; /* 悬停颜色稍浅 */
+    background-color: #FFC107;
     color: #fff;
-    transform: translateY(-1px); /* 微动效 */
+    transform: translateY(-1px);
+}
+.btn-primary:hover {
+    background-color: #144988;
+    color: #FFD700;
+    transform: translateY(-1px);
 }
 .btn {
     @include sans-serif-font;
@@ -286,7 +287,15 @@ products-buttons .btn i {
     font-weight: 700;
     text-transform: uppercase;
 }
+.call-to-action {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    text-align: center;
 
+    p {
+        margin: 0;
+    }
+}
 .btn-xl {
     padding: 15px 30px;
 }
