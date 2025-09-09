@@ -348,13 +348,10 @@ footer {
 }
 /* Feature Box 样式 */
 .feature-box {
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  padding: 20px;
-  width: calc(33.333% - 20px); /* 三列布局 - 间隙 */
-  box-sizing: border-box;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+    padding: 30px 20px;           /* 内边距 */
+    background-color: #f8f9fa;    /* 浅灰背景，可根据需求改 */
+    border-radius: 10px;          /* 圆角 */
+    transition: transform 0.3s, box-shadow 0.3s; /* 悬停动画 */
 }
 
 .feature-box i {
