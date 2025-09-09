@@ -72,6 +72,7 @@ aside {
 .navbar-default {
     background-color: white;
     border-color: rgba($theme-dark, .5);
+    min-height: 70px;
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -155,7 +156,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/background.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -284,7 +285,7 @@ header {
     }
 }
 .call-to-action p {
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin: 0;
     color: #ccc; /* 灰色，和深色背景搭配 */
 }
