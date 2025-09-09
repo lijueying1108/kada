@@ -334,3 +334,8 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+.section-divider {
+    height: 2px;
+    background: linear-gradient(to right, #ccc, #eee, #ccc);
+    margin: 40px 0;
+}
