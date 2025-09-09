@@ -260,6 +260,7 @@ products-buttons .btn i {
     @include button-variant(#144988, #FFD700, #FFD700);
     color: #144988;
     transition: all 0.3s ease;
+    border: 1px solid #FFD700;
 }
 .btn-primary i {
     margin-right: 6px;
