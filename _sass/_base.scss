@@ -230,6 +230,11 @@ header {
     margin: 5px;
     text-transform: uppercase;
 }
+
+products-buttons .btn i {
+    margin-right: 5px;
+}
+
 .portfolio-box {
     position: relative;
     display: block;
@@ -323,6 +328,7 @@ header {
         color: #fff;
         border-color: #144988;
         transform: translateY(-2px);
+    }
 }
 .btn-secondary {
     @include button-variant(#f5f5f5, #144988, darken(#f5f5f5, 10%));
