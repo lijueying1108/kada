@@ -373,7 +373,7 @@ footer {
 
 .feature-box h4 {
   margin-bottom: 10px;
-  font-weight: bold; /* 加粗 */
+  font-weight: bold;
 }
 
 .feature-box p {
@@ -386,11 +386,11 @@ footer {
   font-weight: bold;
   text-decoration: none;
   color: #144988;
-  transition: color 0.3s ease; /* 链接 hover 平滑过渡 */
+  transition: color 0.3s ease;
 }
 
 .feature-box .feature-link:hover {
-  color: #FFC107; /* hover 变色，比如金色 */
+  color: #FFC107;
   text-decoration: underline;
 }
 
