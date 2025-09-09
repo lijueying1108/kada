@@ -260,24 +260,24 @@ products-buttons .btn i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 30px;
+    padding: 8px 20px;
     background-color: #FFD700; /* 金色背景 */
     color: #144988;             /* 深蓝文字 */
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 50px;        /* 圆角按钮 */
     text-decoration: none;
     transition: all 0.3s ease;
 }
 .btn-secondary i {
-    margin-right: 10px; /* 图标和文字间距 */
-    font-size: 18px;
+    margin-right: 6px; /* 图标和文字间距 */
+    font-size: 16px;
 }
 
 .btn-secondary:hover {
     background-color: #FFC107; /* 悬停颜色稍浅 */
     color: #fff;
-    transform: translateY(-2px); /* 微动效 */
+    transform: translateY(-1px); /* 微动效 */
 }
 .btn {
     @include sans-serif-font;
