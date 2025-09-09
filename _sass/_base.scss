@@ -347,29 +347,38 @@ footer {
     }
 }
 .feature-box {
-  background: #fff;           /* 白色背景 */
-  border: 1px solid #ddd;     /* 浅灰边框 */
-  padding: 20px;              /* 内边距 */
-  border-radius: 8px;         /* 圆角 */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 阴影 */
-  display: flex;              /* 使用 flex 布局 */
-  flex-direction: column;     /* 垂直排列 */
-  align-items: center;        /* 水平居中 */
-  justify-content: space-between; /* 顶部图标+标题+底部 Learn more 均匀分布 */
-  min-height: 300px;          /* 可根据需要调整高度 */
-  text-align: center;         /* 文字居中 */
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 300px;
+  transition: all 0.3s ease; /* 平滑动画 */
+}
+
+.feature-box:hover,
+.feature-box:focus {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  border-color: #144988;
 }
 
 .feature-box i {
-  margin-bottom: 15px;        /* 图标下间距 */
+  margin-bottom: 15px;
 }
 
 .feature-box h4 {
   margin-bottom: 10px;
+  font-weight: bold; /* 加粗 */
 }
 
 .feature-box p {
-  flex-grow: 1;               /* 自动填充中间空间，让 Learn more 在底部 */
+  flex-grow: 1;
+  text-align: left;
 }
 
 .feature-box .feature-link {
@@ -377,11 +386,14 @@ footer {
   font-weight: bold;
   text-decoration: none;
   color: #144988;
+  transition: color 0.3s ease; /* 链接 hover 平滑过渡 */
 }
 
 .feature-box .feature-link:hover {
+  color: #FFC107; /* hover 变色，比如金色 */
   text-decoration: underline;
 }
+
 
 .call-to-action {
     max-width: 600px;
